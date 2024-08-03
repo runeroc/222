@@ -1,0 +1,19 @@
+{
+    "games": [
+        {
+            "title": "Назва гри 1",
+            "description": "Опис гри 1",
+            "image": "path/to/image1.jpg",
+            "downloadLink": "#",
+            "category": "action"
+        },
+        {
+            "title": "Назва гри 2",
+            "description": "Опис гри 2",
+            "image": "path/to/image2.jpg",
+            "downloadLink": "#",
+            "category": "adventure"
+        }
+        // Додайте інші ігри
+    ]
+}

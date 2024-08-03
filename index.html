@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXLTO-GAMES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EXLTO-GAMES</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Популярні</a></li>
+                <li><a href="#">Категорії</a></li>
+                <li><a href="#">Коментарі</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" id="login-button">Увійти</a>
+            <a href="#" id="register-button">Зареєструватися</a>
+        </div>
+    </header>
+    <main>
+<section class="comments">
+    <h2>Коментарі</h2>
+    <form id="comment-form">
+        <label for="comment-name">Ім'я:</label>
+        <input type="text" id="comment-name" name="name" required>
+        <label for="comment-text">Коментар:</label>
+        <textarea id="comment-text" name="comment" rows="4" required></textarea>
+        <button type="submit">Додати коментар</button>
+    </form>
+    <div id="comment-list" class="comment-list">
+        <!-- Коментарі будуть завантажені тут через JavaScript -->
+    </div>
+</section>
+
+        <section class="new-releases">
+            <h2>Новинки</h2>
+            <div class="game-list" id="games-container">
+                <!-- Ігри будуть завантажені тут через JavaScript -->
+            </div>
+        </section>
+        <section class="popular-games">
+            <h2>Популярні ігри</h2>
+            <div class="game-list" id="games-container">
+                <!-- Ігри будуть завантажені тут через JavaScript -->
+            </div>
+        </section>
+        <section class="filters">
+            <h2>Фільтри</h2>
+            <form>
+                <label for="category">Категорія:</label>
+                <select id="category" name="category">
+                    <option value="action">Екшн</option>
+                    <option value="adventure">Пригоди</option>
+                    <option value="strategy">Стратегія</option>
+                    <!-- Додайте інші категорії -->
+                </select>
+                <button type="submit">Застосувати</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EXLTO-GAMES. Всі права захищені.</p>
+    </footer>
+
+    <!-- Модальне вікно для входу -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Увійти</h2>
+            <form>
+                <label for="login-username">Користувач:</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для реєстрації -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Зареєструватися</h2>
+            <form>
+                <label for="register-username">Користувач:</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-email">Електронна пошта:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Пароль:</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
